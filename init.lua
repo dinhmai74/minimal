@@ -10,6 +10,8 @@ vim.opt.textwidth = 80
 
 vim.diagnostic.config({ virtual_text = true })
 
+vim.cmd.colorscheme("catppuccin")
+
 vim.pack.add({
   "https://github.com/nvim-treesitter/nvim-treesitter",
   "https://github.com/saghen/blink.cmp",
