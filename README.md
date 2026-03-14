@@ -5,9 +5,13 @@ reference for how to configure neovim using lua in the latest version.
 
 it comes in three flavors: `featureful`, `light` and `minimal`. 
 
-- `featureful`: sane default options, highlighting, lsp diagnostics, completions, fuzzy finding and some quality-of-life/appearance plugins. heavily documented.
-- `light`: sane default options, highlighting, lsp diagnostics, completions and fuzzy finding. heavily documented
-- `minimal`: the absolute bare minimal for sane default options, highlighting, lsp diagnostics and completions. no documentation in code
+- `featureful`: sane default options, highlighting, lsp diagnostics,
+  completions, fuzzy finding and some quality-of-life/appearance plugins.
+  heavily documented.
+- `light`: sane default options, highlighting, lsp diagnostics, completions and
+  fuzzy finding. heavily documented
+- `minimal`: the absolute bare minimal for sane default options, highlighting,
+  lsp diagnostics and completions. no documentation in code
 
 ## Screenshots
 
@@ -25,7 +29,6 @@ Requires neovim version `0.12` or greater
 
 ## Dependencies
 - `git` - for vim builtin package manager. (see `:h vim.pack`)
-- `unzip` - for [mason](https://github.com/mason-org/mason.nvim), specifically for `clangd`, which the config installs by default
 - `ripgrep` - for fuzzy finding 
 - clipboard tool: xclip/xsel/win32yank - for clipboard sharing between OS and neovim (see `h: clipboard-tool`)
 - a [nerd font](https://www.nerdfonts.com/) (ensure the terminal running neovim is using it)
