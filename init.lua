@@ -121,6 +121,9 @@ vim.diagnostic.config({
 -- clear search highlights with <Esc>
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
+-- INFO: colorscheme
+vim.cmd.colorscheme("catppuccin")
+
 -- INFO: plugins
 -- we install plugins with neovim's builtin package manager: vim.pack
 -- and then enable/configure them by calling their setup functions.
