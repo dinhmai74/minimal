@@ -1,3 +1,10 @@
+<div align="right">
+  <a href="https://www.buymeacoffee.com/Hashino" target="_blank">
+    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" 
+    alt="Buy Me A Coffee" style="height: 24px !important;width: 104px !important;" >
+  </a>
+</div>
+
 # Introduction
 `minimal.nvim` is a neovim 0.12 configuration written in lua. this is not meant
 to be a distribution, but rather a template for you to build upon and/or a
