@@ -153,8 +153,7 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- vary wildly. refer to each plugin's documentation for details.
 
 -- INFO: colorscheme
-vim.pack.add({ "https://github.com/rebelot/kanagawa.nvim" }, { confirm = false })
-vim.cmd.colorscheme("kanagawa")
+vim.cmd.colorscheme("catppuccin")
 
 -- INFO: formatting and syntax highlighting
 vim.pack.add({ "https://github.com/nvim-treesitter/nvim-treesitter" }, { confirm = false })
@@ -193,6 +192,7 @@ require("blink.cmp").setup({
   },
 
   keymap = {
+    -- these are the default blink keymaps
     ['<C-n>'] = { 'select_next', 'fallback_to_mappings' },
     ['<C-p>'] = { 'select_prev', 'fallback_to_mappings' },
     ['<C-y>'] = { 'select_and_accept', 'fallback' },
@@ -225,9 +225,6 @@ local lsp_servers = {
     -- https://luals.github.io/wiki/settings/ | `:h nvim_get_runtime_file`
     Lua = { workspace = { library = vim.api.nvim_get_runtime_file("lua", true) }, },
   },
-  clangd = {},
-  rust_analyzer = {},
-  gopls = {},
 }
 
 vim.pack.add({
@@ -314,8 +311,8 @@ require("which-key").setup({
 
 -- INFO: utility plugins
 vim.pack.add({
-  "https://github.com/windwp/nvim-autopairs",    -- auto pairs
-  "https://github.com/folke/todo-comments.nvim"  -- highlight TODO/INFO/WARN comments
+  "https://github.com/windwp/nvim-autopairs",   -- auto pairs
+  "https://github.com/folke/todo-comments.nvim" -- highlight TODO/INFO/WARN comments
 }, { confirm = false })
 
 require("nvim-autopairs").setup()
